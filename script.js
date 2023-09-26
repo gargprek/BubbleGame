@@ -44,6 +44,7 @@ document.querySelector("#pbtm").addEventListener("click",function(details){
 	}
 	else{
 		decreaseScore();
+	}
 });
 runTimer();
 makebubble();

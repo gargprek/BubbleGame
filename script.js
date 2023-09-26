@@ -28,7 +28,11 @@ function getNewHit(){
 }
 var score=0;
 function increaseScore(){
-	score+=10;
+	score+=5;
+	document.querySelector("#scoreval").textContent=score;
+}
+function decreaseScore(){
+	score-=2;
 	document.querySelector("#scoreval").textContent=score;
 }
 document.querySelector("#pbtm").addEventListener("click",function(details){
@@ -38,6 +42,8 @@ document.querySelector("#pbtm").addEventListener("click",function(details){
 		makebubble();
 		getNewHit();
 	}
+	else{
+		decreaseScore();
 });
 runTimer();
 makebubble();
